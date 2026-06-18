@@ -1,0 +1,10 @@
+name = "intranet-portal"
+main = "worker/index.js"
+compatibility_date = "2025-06-01"
+
+# Serve the Eleventy build output as static assets, routed through the Worker
+# so we can layer on security headers (see worker/index.js).
+[assets]
+directory = "./_site"
+binding = "ASSETS"
+not_found_handling = "404-page"

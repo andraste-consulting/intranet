@@ -1,0 +1,140 @@
+{
+  "groups": [
+    {
+      "name": "Communication",
+      "icon": "fa-solid fa-comments",
+      "services": [
+        {
+          "name": "Gmail",
+          "description": "Company email and calendar.",
+          "url": "https://mail.google.com",
+          "icon": "fa-solid fa-envelope",
+          "color": "#ea4335"
+        },
+        {
+          "name": "Slack",
+          "description": "Team chat and channels.",
+          "url": "https://slack.com",
+          "icon": "fa-brands fa-slack",
+          "color": "#611f69"
+        },
+        {
+          "name": "Google Meet",
+          "description": "Video calls and meetings.",
+          "url": "https://meet.google.com",
+          "icon": "fa-solid fa-video",
+          "color": "#00897b"
+        },
+        {
+          "name": "Zoom",
+          "description": "Webinars and external calls.",
+          "url": "https://zoom.us",
+          "icon": "fa-solid fa-video",
+          "color": "#2d8cff"
+        }
+      ]
+    },
+    {
+      "name": "Engineering",
+      "icon": "fa-solid fa-code",
+      "services": [
+        {
+          "name": "GitHub",
+          "description": "Source code and pull requests.",
+          "url": "https://github.com",
+          "icon": "fa-brands fa-github",
+          "color": "#f0f6fc"
+        },
+        {
+          "name": "Linear",
+          "description": "Issues, projects and roadmap.",
+          "url": "https://linear.app",
+          "icon": "fa-solid fa-list-check",
+          "color": "#5e6ad2"
+        },
+        {
+          "name": "Cloudflare",
+          "description": "DNS, CDN and Workers.",
+          "url": "https://dash.cloudflare.com",
+          "icon": "fa-solid fa-cloud",
+          "color": "#f38020"
+        },
+        {
+          "name": "Sentry",
+          "description": "Error monitoring and alerts.",
+          "url": "https://sentry.io",
+          "icon": "fa-solid fa-bug",
+          "color": "#8a4dff"
+        }
+      ]
+    },
+    {
+      "name": "Productivity",
+      "icon": "fa-solid fa-folder-open",
+      "services": [
+        {
+          "name": "Google Drive",
+          "description": "Shared documents and files.",
+          "url": "https://drive.google.com",
+          "icon": "fa-brands fa-google-drive",
+          "color": "#1fa463"
+        },
+        {
+          "name": "Notion",
+          "description": "Knowledge base and wiki.",
+          "url": "https://notion.so",
+          "icon": "fa-solid fa-book",
+          "color": "#ffffff"
+        },
+        {
+          "name": "Figma",
+          "description": "Design files and prototypes.",
+          "url": "https://figma.com",
+          "icon": "fa-brands fa-figma",
+          "color": "#f24e1e"
+        },
+        {
+          "name": "Calendar",
+          "description": "Team and meeting schedules.",
+          "url": "https://calendar.google.com",
+          "icon": "fa-solid fa-calendar-days",
+          "color": "#4285f4"
+        }
+      ]
+    },
+    {
+      "name": "Operations & Finance",
+      "icon": "fa-solid fa-building",
+      "services": [
+        {
+          "name": "Mercury",
+          "description": "Business banking.",
+          "url": "https://mercury.com",
+          "icon": "fa-solid fa-building-columns",
+          "color": "#5266eb"
+        },
+        {
+          "name": "Xero",
+          "description": "Accounting and invoicing.",
+          "url": "https://xero.com",
+          "icon": "fa-solid fa-file-invoice-dollar",
+          "color": "#13b5ea"
+        },
+        {
+          "name": "HR Portal",
+          "description": "Time off, payroll and benefits.",
+          "url": "#",
+          "icon": "fa-solid fa-user-group",
+          "color": "#34d399"
+        },
+        {
+          "name": "IT Help Desk",
+          "description": "Raise a support ticket.",
+          "url": "#",
+          "icon": "fa-solid fa-headset",
+          "color": "#fbbf24"
+        }
+      ]
+    }
+  ]
+}

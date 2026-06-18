@@ -1,0 +1,20 @@
+<div
+  class="portal-card-wrap"
+  data-name="{{ service.name | lower }}"
+  data-description="{{ service.description | lower }}"
+>
+  <a
+    class="uk-card uk-card-body portal-card"
+    href="{{ service.url }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="--card-accent: {{ service.color or '#6c8cff' }};"
+  >
+    <div class="portal-card-icon">
+      <i class="{{ service.icon }}"></i>
+    </div>
+    <h3 class="portal-card-title">{{ service.name }}</h3>
+    <p class="portal-card-desc uk-text-muted">{{ service.description }}</p>
+    <span class="portal-card-arrow" uk-icon="icon: arrow-right"></span>
+  </a>
+</div>

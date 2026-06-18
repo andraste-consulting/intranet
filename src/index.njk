@@ -1,0 +1,48 @@
+---
+layout: base.njk
+title: Andraste Portal
+---
+
+<header class="portal-header uk-text-center">
+  <div class="portal-logo">
+    <i class="{{ site.logoIcon }}"></i>
+  </div>
+  <h1 class="uk-heading-small uk-margin-remove-bottom">{{ site.company }}</h1>
+  <p class="uk-text-lead uk-text-muted uk-margin-small-top">{{ site.tagline }}</p>
+
+  <div class="portal-search uk-margin-medium-top">
+    <div class="uk-inline uk-width-large uk-width-1-1@s">
+      <span class="uk-form-icon" uk-icon="icon: search"></span>
+      <input
+        id="portal-filter"
+        class="uk-input uk-form-large"
+        type="search"
+        placeholder="Search services…"
+        autocomplete="off"
+        aria-label="Search services"
+      />
+    </div>
+  </div>
+</header>
+
+<div id="portal-grid">
+  {% for group in services.groups %}
+  <section class="portal-group" data-group="{{ group.name }}">
+    <h2 class="portal-group-title uk-flex uk-flex-middle">
+      {% if group.icon %}<i class="{{ group.icon }} uk-margin-small-right"></i>{% endif %}
+      <span>{{ group.name }}</span>
+    </h2>
+
+    <div class="uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l" uk-grid>
+      {% for service in group.services %}
+      {% include "card.njk" %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>
+
+<div id="portal-empty" class="uk-text-center uk-text-muted uk-margin-large-top" hidden>
+  <i class="fa-solid fa-magnifying-glass fa-2x uk-margin-small-bottom"></i>
+  <p>No services match your search.</p>
+</div>
