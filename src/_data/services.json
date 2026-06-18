@@ -49,7 +49,7 @@
           "name": "Password Pusher",
           "description": "Security share or request passwords.",
           "url": "https://linear.app",
-          "icon": "fa-solid fa-list-check",
+          "icon": "fa-solid fa-key",
           "color": "#5e6ad2"
         }
       ]
