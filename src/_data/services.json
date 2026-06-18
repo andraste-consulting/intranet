@@ -28,16 +28,9 @@
       ]
     },
     {
-      "name": "Engineering",
+      "name": "Engineering & Security",
       "icon": "fa-solid fa-code",
       "services": [
-        {
-          "name": "Linear",
-          "description": "Issues, projects and roadmap.",
-          "url": "https://linear.app",
-          "icon": "fa-solid fa-list-check",
-          "color": "#5e6ad2"
-        },
         {
           "name": "Cloudflare",
           "description": "DNS, CDN and Workers.",
@@ -46,11 +39,18 @@
           "color": "#f38020"
         },
         {
-          "name": "Sentry",
-          "description": "Error monitoring and alerts.",
-          "url": "https://sentry.io",
-          "icon": "fa-solid fa-bug",
-          "color": "#8a4dff"
+          "name": "Linear",
+          "description": "Issues, projects and roadmap.",
+          "url": "https://linear.app",
+          "icon": "fa-solid fa-list-check",
+          "color": "#5e6ad2"
+        },
+        {
+          "name": "Password Pusher",
+          "description": "Security share or request passwords.",
+          "url": "https://linear.app",
+          "icon": "fa-solid fa-list-check",
+          "color": "#5e6ad2"
         }
       ]
     },
@@ -64,6 +64,13 @@
           "url": "https://drive.google.com",
           "icon": "fa-brands fa-google-drive",
           "color": "#1fa463"
+        },
+        {
+          "name": "Tally",
+          "description": "Collect information from clients.",
+          "url": "https://tally.so",
+          "icon": "fa-solid fa-pen-to-square",
+          "color": "#fbbf24"
         }
       ]
     },
@@ -86,10 +93,10 @@
           "color": "#13b5ea"
         },
         {
-          "name": "IT Help Desk",
+          "name": "PandaDoc",
           "description": "Raise a support ticket.",
-          "url": "#",
-          "icon": "fa-solid fa-headset",
+          "url": "https://pandadoc.com",
+          "icon": "fa-solid fa-signature",
           "color": "#fbbf24"
         }
       ]
