@@ -16,14 +16,14 @@
           "description": "Team chat and channels.",
           "url": "https://slack.com",
           "icon": "fa-brands fa-slack",
-          "color": "#611f69"
+          "color": "#a25dd6"
         },
         {
           "name": "Google Meet",
           "description": "Video calls and meetings.",
           "url": "https://meet.google.com",
           "icon": "fa-solid fa-video",
-          "color": "#00897b"
+          "color": "#14b8a6"
         }
       ]
     },
@@ -43,14 +43,14 @@
           "description": "Issues, projects and roadmap.",
           "url": "https://linear.app",
           "icon": "fa-solid fa-list-check",
-          "color": "#5e6ad2"
+          "color": "#818cf8"
         },
         {
           "name": "Password Pusher",
           "description": "Security share or request passwords.",
           "url": "https://secrets.andraste.consulting",
           "icon": "fa-solid fa-key",
-          "color": "#5e6ad2"
+          "color": "#ec4899"
         }
       ]
     },
@@ -63,14 +63,14 @@
           "description": "Shared documents and files.",
           "url": "https://drive.google.com",
           "icon": "fa-brands fa-google-drive",
-          "color": "#1fa463"
+          "color": "#34a853"
         },
         {
           "name": "Tally",
           "description": "Collect information from clients.",
           "url": "https://tally.so",
           "icon": "fa-solid fa-pen-to-square",
-          "color": "#fbbf24"
+          "color": "#facc15"
         }
       ]
     },
@@ -97,7 +97,7 @@
           "description": "Sign agreements with external parties.",
           "url": "https://pandadoc.com",
           "icon": "fa-solid fa-signature",
-          "color": "#fbbf24"
+          "color": "#84cc16"
         }
       ]
     }
