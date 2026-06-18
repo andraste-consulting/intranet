@@ -24,13 +24,6 @@
           "url": "https://meet.google.com",
           "icon": "fa-solid fa-video",
           "color": "#00897b"
-        },
-        {
-          "name": "Zoom",
-          "description": "Webinars and external calls.",
-          "url": "https://zoom.us",
-          "icon": "fa-solid fa-video",
-          "color": "#2d8cff"
         }
       ]
     },
