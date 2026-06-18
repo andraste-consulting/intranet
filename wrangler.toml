@@ -15,3 +15,18 @@ command = "npm run build"
 directory = "./_site"
 binding = "ASSETS"
 not_found_handling = "404-page"
+
+# Cloudflare Access JWT verification (see worker/access.js).
+#
+# When both vars are set the Worker requires and verifies the Access token on
+# every request; leave them unset for local `wrangler dev` to skip enforcement.
+# Neither value is a secret (the AUD tag is an identifier, not a key), so plain
+# vars are fine — set them per-environment to your own values:
+#
+#   - ACCESS_TEAM_DOMAIN: your Access team domain, without scheme,
+#       e.g. "your-team.cloudflareaccess.com"
+#   - ACCESS_AUD: this application's Audience (AUD) tag, copied from the
+#       Access application's "Overview" tab in the Zero Trust dashboard.
+[vars]
+ACCESS_TEAM_DOMAIN = ""
+ACCESS_AUD = ""
