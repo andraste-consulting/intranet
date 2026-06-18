@@ -1,0 +1,105 @@
+{
+  "groups": [
+    {
+      "name": "Communication",
+      "icon": "fa-solid fa-comments",
+      "services": [
+        {
+          "name": "Gmail",
+          "description": "Company email and calendar.",
+          "url": "https://mail.google.com",
+          "icon": "fa-solid fa-envelope",
+          "color": "#ea4335"
+        },
+        {
+          "name": "Slack",
+          "description": "Team chat and channels.",
+          "url": "https://slack.com",
+          "icon": "fa-brands fa-slack",
+          "color": "#a25dd6"
+        },
+        {
+          "name": "Google Meet",
+          "description": "Video calls and meetings.",
+          "url": "https://meet.google.com",
+          "icon": "fa-solid fa-video",
+          "color": "#14b8a6"
+        }
+      ]
+    },
+    {
+      "name": "Engineering & Security",
+      "icon": "fa-solid fa-code",
+      "services": [
+        {
+          "name": "Cloudflare",
+          "description": "DNS, CDN and Workers.",
+          "url": "https://dash.cloudflare.com",
+          "icon": "fa-solid fa-cloud",
+          "color": "#f38020"
+        },
+        {
+          "name": "Linear",
+          "description": "Issues, projects and roadmap.",
+          "url": "https://linear.app",
+          "icon": "fa-solid fa-list-check",
+          "color": "#818cf8"
+        },
+        {
+          "name": "Password Pusher",
+          "description": "Security share or request passwords.",
+          "url": "https://secrets.andraste.consulting",
+          "icon": "fa-solid fa-key",
+          "color": "#ec4899"
+        }
+      ]
+    },
+    {
+      "name": "Productivity",
+      "icon": "fa-solid fa-folder-open",
+      "services": [
+        {
+          "name": "Google Drive",
+          "description": "Shared documents and files.",
+          "url": "https://drive.google.com",
+          "icon": "fa-brands fa-google-drive",
+          "color": "#34a853"
+        },
+        {
+          "name": "Tally",
+          "description": "Collect information from clients.",
+          "url": "https://tally.so",
+          "icon": "fa-solid fa-pen-to-square",
+          "color": "#facc15"
+        }
+      ]
+    },
+    {
+      "name": "Operations & Finance",
+      "icon": "fa-solid fa-building",
+      "services": [
+        {
+          "name": "Mercury",
+          "description": "Business banking.",
+          "url": "https://mercury.com",
+          "icon": "fa-solid fa-building-columns",
+          "color": "#5266eb"
+        },
+        {
+          "name": "Xero",
+          "description": "Accounting and invoicing.",
+          "url": "https://xero.com",
+          "icon": "fa-solid fa-file-invoice-dollar",
+          "color": "#13b5ea"
+        },
+        {
+          "name": "PandaDoc",
+          "description": "Sign agreements with external parties.",
+          "url": "https://pandadoc.com",
+          "icon": "fa-solid fa-signature",
+          "color": "#84cc16"
+        }
+      ]
+    }
+  ]
+}

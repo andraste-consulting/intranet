@@ -1,0 +1,30 @@
+{
+  "name": "intranet-portal",
+  "version": "1.0.0",
+  "description": "Static employee portal with configurable service cards, built with Eleventy + UIkit and served by a Cloudflare Worker.",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf _site",
+    "dev": "wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "keywords": [
+    "intranet",
+    "portal",
+    "eleventy",
+    "uikit",
+    "cloudflare-workers"
+  ],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "wrangler": "^4.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "uikit": "^3.21.0"
+  }
+}

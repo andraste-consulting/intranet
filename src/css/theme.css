@@ -1,0 +1,188 @@
+/* ==========================================================================
+   Andraste Portal — dark theme
+   Layered on top of UIkit. UIkit components inherit the `uk-light` inverse
+   styles (set on <html>); this file supplies the dark palette + card design.
+   ========================================================================== */
+
+:root {
+  --bg: #0d1117;
+  --bg-elevated: #161b22;
+  --bg-card: #1b2230;
+  --bg-card-hover: #222b3d;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --accent: #6c8cff;
+}
+
+html,
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+body {
+  background-image:
+    radial-gradient(60rem 60rem at 80% -10%, rgba(108, 140, 255, 0.12), transparent 60%),
+    radial-gradient(50rem 50rem at -10% 10%, rgba(0, 200, 170, 0.08), transparent 55%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-feature-settings: "kern", "liga";
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* ---------- Header ---------- */
+.portal-header {
+  padding: 2rem 0 1rem;
+}
+
+.portal-logo {
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  color: #fff;
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--accent), #00c8aa);
+  box-shadow: 0 10px 30px rgba(108, 140, 255, 0.35);
+}
+
+.portal-header h1 {
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+/* ---------- Search ---------- */
+.portal-search .uk-input {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 999px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portal-search .uk-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(108, 140, 255, 0.25);
+}
+
+.portal-search .uk-form-icon {
+  color: var(--text-muted);
+}
+
+/* ---------- Groups ---------- */
+.portal-group {
+  margin-top: 2.5rem;
+}
+
+.portal-group-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.portal-group-title i {
+  color: var(--accent);
+}
+
+/* ---------- Cards ---------- */
+.portal-card {
+  position: relative;
+  display: block;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.18s ease, border-color 0.18s ease,
+    background-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.portal-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: var(--card-accent);
+  opacity: 0.85;
+}
+
+.portal-card:hover {
+  transform: translateY(-4px);
+  background-color: var(--bg-card-hover);
+  border-color: var(--border-strong);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.portal-card-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  color: var(--card-accent);
+  background: color-mix(in srgb, var(--card-accent) 16%, transparent);
+}
+
+.portal-card-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.portal-card-desc {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.portal-card-arrow {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: var(--text-muted);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.portal-card:hover .portal-card-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ---------- Footer ---------- */
+.portal-footer {
+  flex-shrink: 0;
+  padding: 2rem 0;
+  font-size: 0.85rem;
+}
+
+/* ---------- Search filter state ---------- */
+.portal-card-wrap[hidden],
+.portal-group[hidden] {
+  display: none !important;
+}

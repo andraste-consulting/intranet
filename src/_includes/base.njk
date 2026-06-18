@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" class="uk-light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{{ title or site.title }}</title>
+    <meta name="description" content="{{ site.tagline }}" />
+
+    <!-- Vendored libraries (no external CDN — works on an isolated network) -->
+    <link rel="stylesheet" href="/vendor/uikit/uikit.min.css" />
+    <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+
+    <script src="/vendor/uikit/uikit.min.js"></script>
+    <script src="/vendor/uikit/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <main class="uk-section uk-section-small">
+      <div class="uk-container">
+        {{ content | safe }}
+      </div>
+    </main>
+
+    <footer class="portal-footer uk-text-center uk-text-muted">
+      <div class="uk-container">
+        <p>&copy; {{ "now" | year }} {{ site.footer }}</p>
+      </div>
+    </footer>
+
+    <script src="/js/portal.js" defer></script>
+  </body>
+</html>
