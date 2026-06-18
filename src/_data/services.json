@@ -32,13 +32,6 @@
       "icon": "fa-solid fa-code",
       "services": [
         {
-          "name": "GitHub",
-          "description": "Source code and pull requests.",
-          "url": "https://github.com",
-          "icon": "fa-brands fa-github",
-          "color": "#f0f6fc"
-        },
-        {
           "name": "Linear",
           "description": "Issues, projects and roadmap.",
           "url": "https://linear.app",
@@ -72,27 +65,6 @@
           "icon": "fa-brands fa-google-drive",
           "color": "#1fa463"
         },
-        {
-          "name": "Notion",
-          "description": "Knowledge base and wiki.",
-          "url": "https://notion.so",
-          "icon": "fa-solid fa-book",
-          "color": "#ffffff"
-        },
-        {
-          "name": "Figma",
-          "description": "Design files and prototypes.",
-          "url": "https://figma.com",
-          "icon": "fa-brands fa-figma",
-          "color": "#f24e1e"
-        },
-        {
-          "name": "Calendar",
-          "description": "Team and meeting schedules.",
-          "url": "https://calendar.google.com",
-          "icon": "fa-solid fa-calendar-days",
-          "color": "#4285f4"
-        }
       ]
     },
     {
@@ -112,13 +84,6 @@
           "url": "https://xero.com",
           "icon": "fa-solid fa-file-invoice-dollar",
           "color": "#13b5ea"
-        },
-        {
-          "name": "HR Portal",
-          "description": "Time off, payroll and benefits.",
-          "url": "#",
-          "icon": "fa-solid fa-user-group",
-          "color": "#34d399"
         },
         {
           "name": "IT Help Desk",
