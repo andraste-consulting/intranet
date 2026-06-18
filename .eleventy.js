@@ -8,9 +8,11 @@ module.exports = function (eleventyConfig) {
     "node_modules/uikit/dist/js/uikit-icons.min.js": "vendor/uikit/uikit-icons.min.js"
   });
 
-  // Font Awesome (CSS + webfonts)
+  // Font Awesome (CSS + webfonts). The CSS must keep its `css/` subdirectory:
+  // all.min.css references fonts via `../webfonts/`, so the css/ and webfonts/
+  // folders have to sit side by side under vendor/fontawesome/.
   eleventyConfig.addPassthroughCopy({
-    "node_modules/@fortawesome/fontawesome-free/css/all.min.css": "vendor/fontawesome/all.min.css",
+    "node_modules/@fortawesome/fontawesome-free/css/all.min.css": "vendor/fontawesome/css/all.min.css",
     "node_modules/@fortawesome/fontawesome-free/webfonts": "vendor/fontawesome/webfonts"
   });
 
