@@ -1,4 +1,4 @@
-name = "intranet-portal"
+name = "intranet"
 main = "worker/index.js"
 compatibility_date = "2025-06-01"
 
