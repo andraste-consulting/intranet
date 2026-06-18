@@ -94,7 +94,7 @@
         },
         {
           "name": "PandaDoc",
-          "description": "Raise a support ticket.",
+          "description": "Sign agreements with external parties.",
           "url": "https://pandadoc.com",
           "icon": "fa-solid fa-signature",
           "color": "#fbbf24"
